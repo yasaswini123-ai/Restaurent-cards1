@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .Restaurent-cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .Restaurent-card {
+            width: 200px; 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .Restaurent-image img {
+            width: 100%; 
+            height: 150px; 
+            object-fit: cover; 
+            border-radius: 10px 10px 0 0;
+        }
+
+        .Restaurent-details {
+            padding: 10px;
+            color: rgb(214, 10, 197);
+        }
+
+        .group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .group p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .Rating {
+            color: green;
+            font-weight: bold;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="Restaurent-cards">
+        <div class="Restaurent-card">
+            <div class="Restaurent-image">
+                <img src="https://media.timeout.com/images/105650614/image.jpg" alt="Restaurant Image">
+            </div>
+            <div class="Restaurent-details">
+                <div class="group">
+                    <p>McDonald's</p>
+                    <p class="Rating">4.6 &#x2605</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Restaurent-card">
+            <div class="Restaurent-image">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.1FllWqOv4W7824wG_PZdxAHaFJ&pid=Api&P=0&h=180" alt="Restaurant Image">
+            </div>
+            <div class="Restaurent-details">
+                <div class="group">
+                    <p>KFC</p>
+                    <p class="Rating">4.9 &#x2605</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Restaurent-card">
+            <div class="Restaurent-image">
+                <img src="https://s1.stabroeknews.com/images/2017/10/burgerking.jpg" alt="Restaurant Image">
+            </div>
+            <div class="Restaurent-details">
+                <div class="group">
+                    <p>Burger King</p>
+                    <p class="Rating">3.9 &#x2605</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Restaurent-card">
+            <div class="Restaurent-image">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.26a7bVS0Iwsq6-AC76neFgHaFj&pid=Api&P=0&h=180" alt="Restaurant Image">
+            </div>
+            <div class="Restaurent-details">
+                <div class="group">
+                    <p>Domino's</p>
+                    <p class="Rating">4.1 &#x2605</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
